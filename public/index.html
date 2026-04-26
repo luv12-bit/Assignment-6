@@ -1,45 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - My Node.js Server</title>
+    <title>My First Node.js Site</title>
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
+    <header>
+        <h1>Welcome to My Node.js Project</h1>
+    </header>
+
     <nav>
-        <div class="logo">MyServer</div>
-        <ul>
-            <li><a href="/home">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/contact">Contact</a></li>
-        </ul>
+        <a href="/home">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
     </nav>
 
     <main>
-        <section class="hero">
-            <h1>Welcome to My Home Page</h1>
-            <p>This website is built using a simple Node.js server without any external frameworks.</p>
-            <button onclick="location.href='/about'">Learn More</button>
-        </section>
-
-        <div class="card">
-            <h2>What is this project?</h2>
-            <p>This is Assignment 6, where I'm demonstrating how to handle routing and serve static files using the native Node.js <code>http</code> module.</p>
-        </div>
-
-        <div class="card">
-            <h2>Features</h2>
+        <h2>Hello! This is my first server.</h2>
+        <p>I am learning how to use Node.js to make a web server. It was a bit hard at first, but I'm starting to understand how the <code>http</code> module works.</p>
+        
+        <div class="box">
+            <h3>What I learned today:</h3>
             <ul>
-                <li>Custom routing for different paths.</li>
-                <li>Serving HTML and CSS files.</li>
-                <li>Graceful error handling for non-existent routes.</li>
+                <li>How to create a server using <code>http.createServer</code>.</li>
+                <li>How to read files from my computer using the <code>fs</code> module.</li>
+                <li>How to make different pages appear based on the URL (Routing).</li>
+                <li>How to set the correct <code>Content-Type</code> for HTML and CSS.</li>
             </ul>
         </div>
+
+        <p>This page is being served directly by my Node.js code!</p>
     </main>
 
     <footer>
-        <p>&copy; 2026 Student Project. All rights reserved.</p>
+        <p>Made by a student learning Node.js - 2026</p>
     </footer>
 </body>
 </html>
